@@ -25,13 +25,10 @@ workflows:
                     app-store-connect fetch-signing-files $BUNDLE_ID --type IOS_APP_STORE --create
       - name: Use system default keychain
         script: |
-                    keychain add-certificate
+                    keychain add-certificates
       - name: Set up code signing settings on Xcode project
         script: |
                     xcode-project use-profiles
-      - name: Increment build number
-      
-      - name: Build ipa for distribution
       - name: Get Flutter packages
         script: |
                     cd . && flutter packages pub get
@@ -72,6 +69,5 @@ workflows:
           success: true               # To receive a notification when a build succeeds
           failure: false              # To not receive a notification when a build fails
       app_store_connect:   # https://docs.codemagic.io/publishing-yaml/distribution              
-        apple_id: greatriverstech@yahoo.com
-        password: Encrypted(Z0FBQUFBQmhJNmM3azllSi1sdFhpNFlfMHdSTmJVSV91U1RzUUxmREEwNGVicEVPcmxBVkd6cEYyT3JUb21DRlo2YURaUmJwam9vNFRBMWYxQi1PTUszM3JHTjhxeFFyWjFLZ2V3aEY5MHlVN09uX3JueUFSRkU9)
-       
+       apple_id: greatriverstech@yahoo.com
+       password: Encrypted(Z0FBQUFBQmhJNmM3azllSi1sdFhpNFlfMHdSTmJVSV91U1RzUUxmREEwNGVicEVPcmxBVkd6cEYyT3JUb21DRlo2YURaUmJwam9vNFRBMWYxQi1PTUszM3JHTjhxeFFyWjFLZ2V3aEY5MHlVN09uX3JueUFSRkU9)
