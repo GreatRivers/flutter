@@ -6,6 +6,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+//ignore: must_be_immutable
 class BottomView extends StatelessWidget {
   Completer<WebViewController> _controller;
 
