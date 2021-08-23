@@ -5,7 +5,7 @@ workflows:
     max_build_duration: 120
     environment:
       vars:
-        XCODE_WORKSPACE: "Runner.xcworkspace"
+        XCODE_WORKSPACE: "ios/Runner.xcworkspace"
         XCODE_SCHEME: "Runner"                
         # https://docs.codemagic.io/code-signing-yaml/signing-ios/
         APP_STORE_CONNECT_ISSUER_ID: Encrypted(Z0FBQUFBQmhJNWNwYjJDSG00eE54UnNqN2ZWcTlQRTdCOW8wVkFUZVRITlZ3akZNLUwyOGxhWVloTjd2cmV1cjU1WHFDX1Q4a0ltQmR2SUpOel9iZERwTnNNanQ2ZGlmS2Zydi1DS0wyWVBWM1pFZDB6TXNmeXNMNmlmRmU3b0wtUG05bFlCdkNrVlQ=)
