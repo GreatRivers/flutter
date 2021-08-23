@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import '../widgets/bottom_sheet.dart';
 
+//ignore: must_be_immutable
 class WebViewBottom extends StatefulWidget {
   Completer<WebViewController> _webviewFuture;
   final bool isOpen;
