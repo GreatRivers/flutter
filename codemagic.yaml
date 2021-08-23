@@ -8,7 +8,7 @@ workflows:
         XCODE_WORKSPACE: "Runner.xcworkspace"
         XCODE_SCHEME: "Runner"                
         # https://docs.codemagic.io/code-signing-yaml/signing-ios/
-        APP_STORE_CONNECT_ISSUER_ID: Encrypted(...) # <-- Put your encrypted App Store Connect Issuer Id here 
+        APP_STORE_CONNECT_ISSUER_ID: Encrypted(Z0FBQUFBQmhJNWNwYjJDSG00eE54UnNqN2ZWcTlQRTdCOW8wVkFUZVRITlZ3akZNLUwyOGxhWVloTjd2cmV1cjU1WHFDX1Q4a0ltQmR2SUpOel9iZERwTnNNanQ2ZGlmS2Zydi1DS0wyWVBWM1pFZDB6TXNmeXNMNmlmRmU3b0wtUG05bFlCdkNrVlQ=)
         APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...) # <-- Put your encrypted App Store Connect Key Identifier here 
         APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted App Store Connect Private Key here 
         CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted Certificate Private Key here 
