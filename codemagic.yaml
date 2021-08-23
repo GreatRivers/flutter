@@ -9,7 +9,7 @@ workflows:
         XCODE_SCHEME: "Runner"                
         # https://docs.codemagic.io/code-signing-yaml/signing-ios/
         APP_STORE_CONNECT_ISSUER_ID: Encrypted(Z0FBQUFBQmhJNWNwYjJDSG00eE54UnNqN2ZWcTlQRTdCOW8wVkFUZVRITlZ3akZNLUwyOGxhWVloTjd2cmV1cjU1WHFDX1Q4a0ltQmR2SUpOel9iZERwTnNNanQ2ZGlmS2Zydi1DS0wyWVBWM1pFZDB6TXNmeXNMNmlmRmU3b0wtUG05bFlCdkNrVlQ=)
-        APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...) # <-- Put your encrypted App Store Connect Key Identifier here 
+        APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(Z0FBQUFBQmhJNWVmdXI0alNKT2Q4Q1drNGFZSVBxekpkS2tES1VVNmJsM1EyVUZYelMtUUU2VDZvTXZzRzhyYU1QUWcyX0xiaTN2ZWYySVREay1hM045NURJVWtSMEFVcmc9PQ==) 
         APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted App Store Connect Private Key here 
         CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted Certificate Private Key here 
         BUNDLE_ID: "io.codemagic.flutteryaml" # <-- Put your bundle id here
