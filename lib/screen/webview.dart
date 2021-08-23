@@ -1,14 +1,11 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:flutter/material.dart';
-//import 'package:flutter_webview/helpers/ad_helper.dart';
 import 'package:flutter_webview/widgets/webview_bottom.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:provider/provider.dart';
 import '../providers/connection.dart';
 import 'package:lottie/lottie.dart';
-//import 'package:shared_preferences/shared_preferences.dart';
-//import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class WebViewExample extends StatefulWidget {
   @override
