@@ -8,16 +8,16 @@ workflows:
           XCODE_WORKSPACE: "swiftly.xcworkspace" # <-- Put the name of your workspace here. 
           XCODE_SCHEME: "swiftly" # <-- Put the name of your scheme here.
           # Set up env vars for manual codesigning (See - https://docs.codemagic.io/code-signing-yaml/signing-ios/)
-          CM_CERTIFICATE: 
-          CM_PROVISIONING_PROFILE: 
-          CERTIFICATE_PRIVATE_KEY: 
+          CM_CERTIFICATE: ""
+          CM_PROVISIONING_PROFILE: ""
+          CERTIFICATE_PRIVATE_KEY: ""
           # Env vars for automatic build versioning and publishing
-          APP_STORE_CONNECT_ISSUER_ID: 
-          APP_STORE_CONNECT_KEY_IDENTIFIER: 
-          APP_STORE_CONNECT_PRIVATE_KEY: 
-          APPLE_ID_EMAIL: 
-          APP_SPECIFIC_PASSWORD: 
-          APP_STORE_APP_ID: 
+          APP_STORE_CONNECT_ISSUER_ID: ""
+          APP_STORE_CONNECT_KEY_IDENTIFIER: ""
+          APP_STORE_CONNECT_PRIVATE_KEY: ""
+          APPLE_ID_EMAIL: ""
+          APP_SPECIFIC_PASSWORD: ""
+          APP_STORE_APP_ID: ""
         PUBLIC_ENV_VAR: ""
       flutter: stable
       xcode: latest
