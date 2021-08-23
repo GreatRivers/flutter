@@ -1,12 +1,32 @@
-# Customize the codemagic.yaml file according to your project and commit it to the root of your repository
-# Check out https://docs.codemagic.io/getting-started/yaml/ for more information
 workflows:
-  greatrivers-workflow:
-    name: GreatRivers Workflow
+  ios-code-signing:
+    name: Biketravelart iOS
+    instance_type: mac_mini
+    max_build_duration: 120
+    environment:
+      vars:
+        PUBLIC_ENV_VAR: "value here"
+      flutter: stable
+      xcode: latest
+    cache:
+      cache_paths:
+        - ~/.pub-cache
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
+      cancel_previous_builds: false
     scripts:
-      - name: Biketravelart
-        script: echo "Hello Codemagician!"
+      - ...
+    artifacts:
+      - build/ios/ipa/*.ipa
     publishing:
       email:
         recipients:
-          - greatriversnet@yahoo.co.uk
+          - greatriversnet@gmail.com
+      notify:
+          success: true     # To receive a notification when a build succeeds
+          failure: false    # To not receive a notification when a build fails
