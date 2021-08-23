@@ -5,14 +5,6 @@ workflows:
     max_build_duration: 120
     environment:
       vars:
-        PUBLIC_ENV_VAR: "value here"
-        SECRET_ENV_VAR: Encrypted(...)
-    
-    # iOS automatic code signing
-    APP_STORE_CONNECT_ISSUER_ID: Encrypted(...)
-    APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...)
-    APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...)
-    CERTIFICATE_PRIVATE_KEY: Encrypted(...)
       flutter: stable
       xcode: latest
     cache:
@@ -35,4 +27,4 @@ workflows:
         recipients:
           - greatriversnet@gmail.com
       scripts:
-        - echo 'Welcome to the world of Biketraavelart'
+        - echo 'Welcome to the world of Biketravelart'
