@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-//import 'package:flutter_webview/helpers/ad_helper.dart';
-//import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import '../widgets/bottom_sheet.dart';
 
