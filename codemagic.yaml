@@ -1,6 +1,6 @@
 workflows:
-  ios-workflow:
-    name: iOS Workflow
+  biketravelart-ios-workflow:
+    name: Biketravelart iOS Workflow
     # instance_type: mac_mini
     max_build_duration: 120
     environment:
