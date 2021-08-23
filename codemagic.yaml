@@ -10,7 +10,7 @@ workflows:
         # https://docs.codemagic.io/code-signing-yaml/signing-ios/
         APP_STORE_CONNECT_ISSUER_ID: Encrypted(Z0FBQUFBQmhJNWNwYjJDSG00eE54UnNqN2ZWcTlQRTdCOW8wVkFUZVRITlZ3akZNLUwyOGxhWVloTjd2cmV1cjU1WHFDX1Q4a0ltQmR2SUpOel9iZERwTnNNanQ2ZGlmS2Zydi1DS0wyWVBWM1pFZDB6TXNmeXNMNmlmRmU3b0wtUG05bFlCdkNrVlQ=)
         APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(Z0FBQUFBQmhJNWVmdXI0alNKT2Q4Q1drNGFZSVBxekpkS2tES1VVNmJsM1EyVUZYelMtUUU2VDZvTXZzRzhyYU1QUWcyX0xiaTN2ZWYySVREay1hM045NURJVWtSMEFVcmc9PQ==) 
-        APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted App Store Connect Private Key here 
+        APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(Z0FBQUFBQmhJNXV5RElfdVNxeVVscUNrN0d0bzNvUERXSUZpVnlEVnFtTXh4UnlTR0tFZ0didXNIM3VwVHM4S1c3RlZjdC05T1NZNnNsbFJybnFpdDNtal9pSGN3aEhBVHNJWW5JMlpkbW5ZUHFuNE9qUi1VMmg3dXB6Q2RiWkl1dEY1NDRlTzU3RWprZjRwTzJFbGwwT29MV05Wa2hTeUM0dFpOS1ZCY1d4VG1kNTZMUjFLdUVOVGpKb3Etc2xVaVcwS2RNQUJqN21XWnVhd3F0Ujh0Yy1LblJ2bGdmSGQ2eTJkNHdoYlZGc0dJNDdfbjJXWV9YWl9XcWRrV0VpbEVFT0lzWk1QUzBwN2pPZUV4d0Z1Z2pfdXZFaUlhVXdHYTZRUlR6b1RYUGxBYVlPSld6b1ROYmVsMDAwbGFFYTJOb3NQZGY5UkNhbl9KZ2RxdGhZUEtCdjJOMWgzMzZyM2d3NUNXYW5ENk00NHpITWdKS3ZoTXVrcjlnSlNOekNJNmJlQTVSVGxqZ1BKc1poYk1wekd6bnJub2tuVC1jcmxZVENyUnlFODhibU1lVUpsOUdIeE5iRT0=)
         CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your encrypted Certificate Private Key here 
         BUNDLE_ID: "io.codemagic.flutteryaml" # <-- Put your bundle id here
         APP_STORE_ID: 11111111110 # <-- Use the TestFlight Apple id number (An automatically generated ID assigned to your app) found under General > App Information > Apple ID. 
