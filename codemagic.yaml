@@ -38,9 +38,12 @@ workflows:
       - name: Install pods
         script: |
                     find . -name "Podfile" -execdir pod install \;
-      - name: Build ipa for distribution
+      - name: Flutter build ipa and automatic versioning
         script: |
-          xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"         
+          flutter build ipa --release \
+          --build-name=1.0.0 \
+          --build-number=$(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_ID") + 1)) \
+          --export-options-plist=/Users/builder/export_options.plist         
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
